@@ -1,7 +1,11 @@
-import styled from 'styled-components';
-import { Form as Unform } from '@unform/web';
+import styled from 'styled-components'
+import { Form as Unform } from '@unform/web'
 
-export const Form = styled(Unform)`
+interface IFormProps {
+  ref: any
+}
+
+export const Form = styled(Unform)<IFormProps>`
   padding: 48px 40px;
   display: flex;
   flex-direction: column;
@@ -41,4 +45,4 @@ export const Form = styled(Unform)`
       margin: 0 auto;
     }
   }
-`;
+`
